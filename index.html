@@ -251,11 +251,12 @@
       <button class="modal-close" data-close="1" aria-label="关闭">×</button>
       <h3 class="modal-title">添加微信</h3>
       <p class="modal-wechat-id">微信号：<strong>Novus_Hello_World</strong></p>
-      <div class="qr-placeholder">
-        <div class="qr-inner">
-          <span>[请替换为 assets/wechat-qr.png]</span>
+      <div class="qr-placeholder" id="qrPlaceholder">
+        <img id="qrImg" class="qr-img" alt="微信二维码" loading="eager" />
+        <div class="qr-inner qr-inner--fallback" id="qrFallback" style="display:none">
+          <span>[请替换为 assets/wechat-qr.png 或 wechat-qr.jpg]</span>
         </div>
-        <p class="qr-tip">微信二维码占位图 · 请替换 <code>assets/wechat-qr.png</code></p>
+        <p class="qr-tip qr-tip--fallback" id="qrTipFallback" style="display:none">微信二维码占位图 · 请替换 <code>assets/wechat-qr.png</code> 或 <code>assets/wechat-qr.jpg</code></p>
       </div>
     </div>
   </div>
